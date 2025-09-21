@@ -1,0 +1,10 @@
+[Unit]
+Description=A script to control a Lian-Li fan controller with a profile based control.
+After=multi-user.target
+
+[Service]
+Type=script
+ExecStart=/bin/uni-sync-timer
+
+[Install]
+WantedBy=multi-user.target
